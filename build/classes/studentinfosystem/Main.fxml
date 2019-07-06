@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="621.0" prefWidth="1158.0" style="-fx-border-color: #800080; -fx-background-color: #efbbff; -fx-border-width: 0.5em;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="studentinfosystem.MainController">
+   <children>
+      <AnchorPane fx:id="profilePane" layoutX="89.0" layoutY="172.0" prefHeight="399.0" prefWidth="978.0" style="-fx-background-color: white; -fx-border-radius: 1.3em; -fx-background-radius: 1.3em;">
+         <children>
+            <AnchorPane layoutX="295.0" layoutY="123.0" prefHeight="55.0" prefWidth="1026.0" style="-fx-background-color: #d896ff;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label fx:id="headingName" layoutX="43.0" layoutY="15.0" text="Student Registration" textFill="PURPLE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <JFXButton layoutX="876.0" layoutY="10.0" onAction="#DeleteBtnPushed" prefHeight="33.0" prefWidth="77.0" style="-fx-background-color: #F1A9A0;" text="Delete" AnchorPane.rightAnchor="25.0" />
+                  <JFXButton layoutX="800.0" layoutY="10.0" onAction="#EditBtnPushed" prefHeight="33.0" prefWidth="77.0" style="-fx-background-color: #FDE3A7;" text="Edit" AnchorPane.rightAnchor="110.0" />
+                  <JFXButton layoutX="705.0" layoutY="10.0" onAction="#AddBtnPushed" prefHeight="33.0" prefWidth="77.0" style="-fx-background-color: #C8F7C5;" text="Add" AnchorPane.rightAnchor="196.0" />
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="210.0" fitWidth="200.0" layoutX="15.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icon.png" />
+               </image>
+            </ImageView>
+            <Pane layoutX="275.0" layoutY="87.0" prefHeight="260.0" prefWidth="636.0" AnchorPane.bottomAnchor="52.0" AnchorPane.leftAnchor="275.0" AnchorPane.rightAnchor="67.0" AnchorPane.topAnchor="87.0">
+               <children>
+                  <Label layoutX="43.0" layoutY="39.0" text="Roll No.">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="44.0" layoutY="80.0" text="Name">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="43.0" layoutY="123.0" text="Faculty">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="44.0" layoutY="164.0" text="Address">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="44.0" layoutY="203.0" text="Email">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="365.0" layoutY="37.0" text="Phone">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="profileRollNo" layoutX="117.0" layoutY="41.0" prefHeight="20.0" prefWidth="170.0" text="Label">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="profileName" layoutX="116.0" layoutY="78.0" prefHeight="20.0" prefWidth="170.0" text="Label">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="profileFaculty" layoutX="115.0" layoutY="120.0" prefHeight="20.0" prefWidth="170.0" text="Label">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="profileAddress" layoutX="116.0" layoutY="161.0" prefHeight="20.0" prefWidth="170.0" text="Label">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="profileEmail" layoutX="117.0" layoutY="201.0" prefHeight="20.0" prefWidth="170.0" text="Label">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="profilePhone" layoutX="425.0" layoutY="37.0" prefHeight="20.0" prefWidth="170.0" text="Label">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="updatePane" layoutX="90.0" layoutY="173.0" prefHeight="397.0" prefWidth="977.0" style="-fx-background-color: white; -fx-border-radius: 1.3em; -fx-background-radius: 1.3em;">
+         <children>
+            <AnchorPane layoutX="295.0" layoutY="123.0" prefHeight="55.0" prefWidth="1026.0" style="-fx-background-color: #d896ff;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label layoutX="43.0" layoutY="15.0" text="Update Information" textFill="PURPLE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="210.0" fitWidth="200.0" layoutX="15.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icon.png" />
+               </image>
+            </ImageView>
+            <Pane layoutX="275.0" layoutY="87.0" prefHeight="272.0" prefWidth="636.0" AnchorPane.bottomAnchor="39.0" AnchorPane.leftAnchor="275.0" AnchorPane.rightAnchor="67.0" AnchorPane.topAnchor="87.0">
+               <children>
+                  <Label layoutX="43.0" layoutY="39.0" text="Roll No.">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="44.0" layoutY="80.0" text="Name">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="43.0" layoutY="123.0" text="Faculty">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="44.0" layoutY="164.0" text="Address">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="44.0" layoutY="203.0" text="Email">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="365.0" layoutY="37.0" text="Phone">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="updateName" layoutX="115.0" layoutY="77.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="updateFaculty" layoutX="115.0" layoutY="121.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="updateAddress" layoutX="114.0" layoutY="163.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="updateEmail" layoutX="114.0" layoutY="202.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="updatePhone" layoutX="426.0" layoutY="33.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <JFXButton fx:id="updateBtn" layoutX="489.0" layoutY="220.0" onAction="#UpdateBtnPushed" prefHeight="40.0" prefWidth="123.0" style="-fx-background-color: #FDE3A7;" text="Update" />
+                  <JFXButton layoutX="359.0" layoutY="220.0" onAction="#UpdateCancelBtnPushed" prefHeight="40.0" prefWidth="123.0" style="-fx-background-color: #F1A9A0;" text="Cancel" />
+                  <Label fx:id="updateRoll" layoutX="117.0" layoutY="40.0" text="Roll No.">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="addPane" layoutX="89.0" layoutY="172.0" prefHeight="410.0" prefWidth="990.0" style="-fx-background-color: white; -fx-border-radius: 1.3em; -fx-background-radius: 1.3em;" AnchorPane.bottomAnchor="45.0" AnchorPane.leftAnchor="83.0" AnchorPane.rightAnchor="85.0" AnchorPane.topAnchor="166.0">
+         <children>
+            <AnchorPane layoutX="295.0" layoutY="123.0" prefHeight="55.0" prefWidth="1026.0" style="-fx-background-color: #d896ff;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label layoutX="43.0" layoutY="15.0" text="Student Registration" textFill="PURPLE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="210.0" fitWidth="200.0" layoutX="15.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icon.png" />
+               </image>
+            </ImageView>
+            <Pane layoutX="275.0" layoutY="87.0" prefHeight="272.0" prefWidth="636.0" AnchorPane.bottomAnchor="39.0" AnchorPane.leftAnchor="275.0" AnchorPane.rightAnchor="67.0" AnchorPane.topAnchor="87.0">
+               <children>
+                  <Label layoutX="43.0" layoutY="39.0" text="Roll No.">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="44.0" layoutY="80.0" text="Name">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="43.0" layoutY="123.0" text="Faculty">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="44.0" layoutY="164.0" text="Address">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="44.0" layoutY="203.0" text="Email">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="365.0" layoutY="37.0" text="Phone">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="RollNo" layoutX="115.0" layoutY="35.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="Name" layoutX="115.0" layoutY="77.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="Faculty" layoutX="115.0" layoutY="121.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="Address" layoutX="114.0" layoutY="163.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="Email" layoutX="114.0" layoutY="202.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="Phone" layoutX="426.0" layoutY="33.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <JFXButton layoutX="484.0" layoutY="211.0" onAction="#RegisterBtnPushed" prefHeight="40.0" prefWidth="123.0" style="-fx-background-color: #C8F7C5;" text="Register" />
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+      <Pane layoutX="799.0" layoutY="72.0" prefHeight="47.0" prefWidth="250.0" style="-fx-background-color: #800080; -fx-background-radius: 1.3em;" AnchorPane.rightAnchor="109.0" AnchorPane.topAnchor="60.0">
+         <children>
+            <TextField fx:id="searchTextField" layoutX="12.0" layoutY="9.0" onAction="#searchAction" prefHeight="30.0" prefWidth="226.0" promptText="Student Roll">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+         </children>
+      </Pane>
+      <ImageView fitHeight="118.0" fitWidth="157.0" layoutX="34.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="494.0" AnchorPane.leftAnchor="34.0" AnchorPane.topAnchor="9.0">
+         <image>
+            <Image url="@../images/2.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="167.0" layoutY="68.0" text="STUDENT  INFORMATION  SYSTEM" textFill="PURPLE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
